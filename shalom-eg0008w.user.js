@@ -6,10 +6,10 @@
 // @match        *://4ever.shalom-house.jp/*
 // @run-at       document-end
 // @grant        GM_addStyle
-// @namespace    https://raw.githubusercontent.com/awrchrw/shalom_eg0008w_helper/25eb211fa46ae938abb87d632538596a5e4897df/
-// @installURL   https://raw.githubusercontent.com/awrchrw/shalom_eg0008w_helper/25eb211fa46ae938abb87d632538596a5e4897df/shalom-eg0008w.js
-// @downloadURL  https://raw.githubusercontent.com/awrchrw/shalom_eg0008w_helper/25eb211fa46ae938abb87d632538596a5e4897df/shalom-eg0008w.js
-// @updateURL    https://raw.githubusercontent.com/awrchrw/shalom_eg0008w_helper/25eb211fa46ae938abb87d632538596a5e4897df/shalom-eg0008w.js
+// @namespace    https://github.com/awrchrw/shalom_eg0008w_helper/raw/refs/heads/
+// @installURL   https://github.com/awrchrw/shalom_eg0008w_helper/raw/refs/heads/main/shalom-eg0008w.user.js
+// @downloadURL  https://github.com/awrchrw/shalom_eg0008w_helper/raw/refs/heads/main/shalom-eg0008w.user.js
+// @updateURL    https://github.com/awrchrw/shalom_eg0008w_helper/raw/refs/heads/main/shalom-eg0008w.user.js
 // ==/UserScript==
 
 (function () {
