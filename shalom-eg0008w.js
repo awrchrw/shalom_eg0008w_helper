@@ -1,11 +1,15 @@
 // ==UserScript==
 // @name         Shalom EG0008W: ポップアップ & 「個人番号出力設定」ハイライト
 // @namespace    https://example.com/
-// @version      0.3
+// @version      0.4
 // @description  EG0008Wに来たら注意ポップアップを出し、「個人番号出力設定」を黄色でマーキング
 // @match        *://4ever.shalom-house.jp/*
 // @run-at       document-end
 // @grant        GM_addStyle
+// @namespace    https://raw.githubusercontent.com/awrchrw/shalom_eg0008w_helper/25eb211fa46ae938abb87d632538596a5e4897df/
+// @installURL   https://raw.githubusercontent.com/awrchrw/shalom_eg0008w_helper/25eb211fa46ae938abb87d632538596a5e4897df/shalom-eg0008w.js
+// @downloadURL  https://raw.githubusercontent.com/awrchrw/shalom_eg0008w_helper/25eb211fa46ae938abb87d632538596a5e4897df/shalom-eg0008w.js
+// @updateURL    https://raw.githubusercontent.com/awrchrw/shalom_eg0008w_helper/25eb211fa46ae938abb87d632538596a5e4897df/shalom-eg0008w.js
 // ==/UserScript==
 
 (function () {
