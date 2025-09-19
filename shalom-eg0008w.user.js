@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shalom EG0008W: ポップアップ & 「個人番号出力設定」ハイライト
 // @namespace    https://example.com/
-// @version      0.6
+// @version      0.7
 // @description  EG0008Wに来たら注意ポップアップを出し、「個人番号出力設定」を黄色でマーキング
 // @match        *://4ever.shalom-house.jp/*
 // @run-at       document-end
@@ -92,8 +92,10 @@
         }
         // Escキーで閉じる
         function onKeyDown(e) {
-            // 一部ブラウザ互換のため "Esc" も見る
-            if (e.key === "Escape" || e.key === "Esc") {
+            const k = e.key;
+            const isSpace = k === " " || k === "Spacebar" || e.code === "Space";
+            // Esc 互換 + Enter/Return + Space を許可
+            if (k === "Escape" || k === "Esc" || k === "Enter" || k === "Return" || isSpace) {
                 e.preventDefault();
                 close();
             }
@@ -104,8 +106,6 @@
         window.addEventListener("keydown", onKeyDown);
 
         document.body.appendChild(backdrop);
-        // 使い勝手向上：表示後にOKへフォーカス
-        if (okBtn && typeof okBtn.focus === "function") okBtn.focus();
     }
 
     // --- highlight text nodes containing the keyword ---
